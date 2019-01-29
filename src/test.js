@@ -1,7 +1,14 @@
-import ExampleComponent from './'
+import React from 'react'
+import { withAudio, withUser } from './'
 
-describe('ExampleComponent', () => {
+describe('audio hoc', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(withAudio(<div />)).toBeTruthy()
+  })
+})
+
+describe('user hoc', () => {
+  it('is truthy', () => {
+    expect(withUser(<div />)).toBeTruthy()
   })
 })

@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { withMocks } from 'connector'
+import AudioButton from './components/AudioButton'
+import WelcomeMessage from './components/WelcomeMessage'
 
-import ExampleComponent from 'connector'
+const component = () => (
+  <React.Fragment>
+    <AudioButton />
+    <WelcomeMessage />
+  </React.Fragment>
+)
 
-export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
-    )
-  }
-}
+export default withMocks(component)
