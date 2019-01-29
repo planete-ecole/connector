@@ -1,7 +1,8 @@
-import ExampleComponent from './'
+import React from 'react'
+import { withMocks } from './'
 
 describe('ExampleComponent', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(withMocks()(<div />)).toBeTruthy()
   })
 })

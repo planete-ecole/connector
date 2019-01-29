@@ -13,7 +13,7 @@ const store = {
   }
 }
 
-export default (data, submit = () => alert('')) => WrappedComponent => () => (
+export default (data, submit = () => alert('data submitted')) => WrappedComponent => () => (
   <WrappedComponent
     store={store}
     data={data}
