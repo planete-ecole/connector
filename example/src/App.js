@@ -1,12 +1,13 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { withMocks } from 'connector'
-import ExampleComponent from './ExampleComponent'
+import AudioButton from './components/AudioButton'
+import WelcomeMessage from './components/WelcomeMessage'
 
-const component = ({store}) => <ExampleComponent store={store} />
+const component = () => (
+  <React.Fragment>
+    <AudioButton />
+    <WelcomeMessage />
+  </React.Fragment>
+)
 
-component.propTypes = {
-  store: PropTypes.object.isRequired
-}
-
-export default withMocks()(component)
+export default withMocks(component)

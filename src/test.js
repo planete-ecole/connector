@@ -1,8 +1,14 @@
 import React from 'react'
-import { withMocks } from './'
+import { withAudio, withUser } from './'
 
-describe('ExampleComponent', () => {
+describe('audio hoc', () => {
   it('is truthy', () => {
-    expect(withMocks()(<div />)).toBeTruthy()
+    expect(withAudio(<div />)).toBeTruthy()
+  })
+})
+
+describe('user hoc', () => {
+  it('is truthy', () => {
+    expect(withUser(<div />)).toBeTruthy()
   })
 })
