@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
+import { withMocks } from 'connector'
+import ExampleComponent from './ExampleComponent'
 
-import ExampleComponent from 'connector'
+const component = ({store}) => <ExampleComponent store={store} />
 
-export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
-    )
-  }
+component.propTypes = {
+  store: PropTypes.object.isRequired
 }
+
+export default withMocks()(component)
