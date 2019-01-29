@@ -1,6 +1,6 @@
 {
   "name": "connector",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "provides connectors for the planete ecole templates",
   "author": "planete-ecole",
   "license": "Proprietary",
