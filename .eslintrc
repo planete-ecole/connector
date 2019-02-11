@@ -16,9 +16,14 @@
     "mocha":   true
   },
   "extends": [
-    "eslint:recommended",
+    "standard",
     "plugin:react/recommended"
   ],
   "rules": {
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

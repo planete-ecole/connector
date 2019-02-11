@@ -1,8 +1,8 @@
 import React from 'react'
 import AudioContext from '../contexts/AudioContext'
 
-function withAudio(WrappedComponent) {
-  function WithAudio(props) {
+function withAudio (WrappedComponent) {
+  function WithAudio (props) {
     return (
       <AudioContext.Consumer>
         {audio => <WrappedComponent audio={audio} {...props} />}

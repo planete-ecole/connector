@@ -14,8 +14,8 @@ const user = {
   token: 'fake token'
 }
 
-function withMocks(WrappedComponent){
-  function WithMocks(props) {
+function withMocks (WrappedComponent) {
+  function WithMocks (props) {
     return (
       <AudioContext.Provider value={audio}>
         <UserContext.Provider value={user}>
