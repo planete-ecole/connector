@@ -2,15 +2,14 @@ import React from 'react'
 import { withAudio } from 'connector'
 import PropTypes from 'prop-types'
 
-const component = ({audio, name}) => (
+const component = ({audio}) => (
   <button type='button' onClick={() => audio.get('hello', 'en-US-Wavenet-D', 2, 1)}>
-    Say "Hello {name}" !
+    Say "Hello" !
   </button>
 )
 
 component.propTypes = {
-  audio: PropTypes.object.isRequired,
-  name: PropTypes.string.isRequired
+  audio: PropTypes.object.isRequired
 }
 
 export default withAudio(component)

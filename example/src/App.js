@@ -5,7 +5,7 @@ import WelcomeMessage from './components/WelcomeMessage'
 
 const component = () => (
   <React.Fragment>
-    <AudioButton name='Natacha' />
+    <AudioButton />
     <WelcomeMessage />
   </React.Fragment>
 )
